@@ -1,0 +1,6 @@
+<mat-toolbar color="primary" class="mat-toolbar">
+  <span>MockServiceWorker</span>
+  <button (click)="toggle()" mat-icon-button class="mat-toolbar__button">
+    <mat-icon>{{ (isDarkTheme$ | async) ? 'dark_mode' : 'light_mode'}}</mat-icon>
+  </button>
+</mat-toolbar>

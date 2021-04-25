@@ -1,0 +1,10 @@
+.mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+
+  &__button {
+    mat-icon {
+      transition: 0.5s;
+    }
+  }
+}
