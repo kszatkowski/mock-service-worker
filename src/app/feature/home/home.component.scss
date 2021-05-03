@@ -1,0 +1,10 @@
+.home {
+  padding: 0 16px;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    column-gap: 16px;
+    grid-gap: 16px;
+  }
+}

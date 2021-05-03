@@ -1,0 +1,24 @@
+.card {
+  &__header {
+    padding-bottom: 8px;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+  }
+
+  &__image {
+    height: 600px;
+    object-fit: cover;
+  }
+
+  &__description {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
