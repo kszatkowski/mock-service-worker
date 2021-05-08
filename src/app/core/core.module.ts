@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 
 import { HeaderComponent } from './components/header/header.component';
 import { AngularMaterialModule } from '../shared/angular-material.module';
@@ -10,7 +11,8 @@ import { AngularMaterialModule } from '../shared/angular-material.module';
   ],
   imports: [
     CommonModule,
-    AngularMaterialModule
+    AngularMaterialModule,
+    HttpClientModule
   ],
   exports: [
     HeaderComponent

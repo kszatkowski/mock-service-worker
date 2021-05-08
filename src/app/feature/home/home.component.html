@@ -1,4 +1,14 @@
 <div class="home">
   <div class="home__grid">
+    <ng-container *ngIf="dogBreeds$ | async as dogBreeds">
+      <ng-container *ngFor="let dogBreed of dogBreeds">
+        <app-card
+          [avatarUrl]="dogBreed.avatarUrl"
+          [description]="dogBreed.description"
+          [imageUrl]="dogBreed.imageUrl"
+          [name]="dogBreed.name"
+        ></app-card>
+      </ng-container>
+    </ng-container>
   </div>
 </div>
