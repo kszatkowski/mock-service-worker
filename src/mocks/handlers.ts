@@ -4,7 +4,7 @@ import { DogBreed } from '../app/shared/models/dog-breed';
 import { environment } from '../environments/environment';
 
 export const handlers = [
-  rest.get('/api/dog-breeds', (req, res, ctx) => {
+  rest.get(`${environment.apiUrl}/dog-breeds`, (req, res, ctx) => {
     return res(ctx.json([{
       avatarUrl: `${environment.baseUrl}/assets/img/maltese-avatar.jpg`,
       description: 'A gentle and fearless dog breed, the Maltese greets everyone as a friend. Their glamorous white coat gives them a look of haughty nobility, but looks can be deceiving.',

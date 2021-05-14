@@ -1,5 +1,9 @@
 # MockServiceWorker
 
+Example setup and implementation how to mock backend using Mock Service Worker library.
+
+Tests use the same mocks and are written with spectator.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.8.
 
 ## Development server
