@@ -8,9 +8,9 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', async () => {
+  it('should contains app-header', async () => {
     await page.navigateTo();
-    expect(await page.getTitleText()).toEqual('mock-service-worker app is running!');
+    expect(await page.isAppHeaderPresent()).toBeTruthy();
   });
 
   afterEach(async () => {
